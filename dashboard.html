@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASI - Education Dashboard</title>
+  <link rel="stylesheet" href="node_modules/overlayscrollbars/styles/overlayscrollbars.min.css">
+  <link rel="stylesheet" href="assets/css/fa.css">
+  <link rel="stylesheet" href="node_modules/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="assets/css/flatpickr_asi.css">
+  <link rel="stylesheet" href="node_modules/nice-select2/dist/css/nice-select2.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="site d-flex">
+    <!-- Header -->
+    <div class="site-header">
+      <div class="header-inner h-100 d-flex align-items-center">
+        <h2 class="header-title">Bảng điều khiển</h2>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Sidebar -->
+    <div class="site-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-header-inner h-100 d-flex align-items-center px-3">
+          <ul class="nav nav-parent">
+            <li class="nav-item">
+              <a href="" class="nav-link d-flex align-items-center p-0">
+                <div class="parent-avatar me-2">
+                  <img src="assets/img/icon-parent-grilt.png" alt=""
+                    class="w-48px h-48px rounded-circle obejct-fit-cover">
+                </div>
+                <div class="parent-info lh-sm">
+                  <div class="parent-title text-start">Nguyễn Hồng Anh</div>
+                  <div class="parent-phone small opacity-50 text-start">+84 123 45678</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-content custom-scroll data-overlayscrollbars-initialize">
+        <div class="h-0px">
+          <div class="sidebar-content-inner">
+            <div class="mb-3">
+              <ul class="nav nav-sidebar-menu flex-column mb-0">
+                <li class="nav-item item-student">
+                  <a href="" class="nav-link item-student-link d-flex align-items-center">
+                    <div class="student-avatar me-2">
+                      <img src="assets/img/icon-student-boy.png" alt=""
+                        class="w-48px h-48px rounded-circle obejct-fit-cover">
+                    </div>
+                    <div class="student-info lh-sm">
+                      <div class="student-title fw-bold text-start">Nguyễn Văn Sơn</div>
+                      <div class="student-class small opacity-50 text-start">Lớp A3 - Trường tiểu học suối hoa</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item item-exercise">
+                  <a href="" class="nav-link d-flex align-items-center">
+                    <div class="item-exercise-icon me-3">
+                      <img src="assets/img/icon-exercise.png" alt=""
+                        class="w-36px h-36px rounded-circle obejct-fit-cover">
+                    </div>
+                    <div class="item-exercise-title lh-sm">
+                      <div class="item-exercise-text text-item-size">Bài tập</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item item-exercise">
+                  <a href="" class="nav-link d-flex align-items-center">
+                    <div class="item-exercise-icon me-3">
+                      <img src="assets/img/icon-study-results.png" alt=""
+                        class="w-36px h-36px rounded-circle obejct-fit-cover">
+                    </div>
+                    <div class="item-exercise-title lh-sm">
+                      <div class="item-exercise-text text-item-size">Kết quả học tập</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item item-exercise">
+                  <a href="" class="nav-link d-flex align-items-center">
+                    <div class="item-exercise-icon me-3">
+                      <img src="assets/img/icon-timeline.png" alt=""
+                        class="w-36px h-36px rounded-circle obejct-fit-cover">
+                    </div>
+                    <div class="item-exercise-title lh-sm">
+                      <div class="item-exercise-text text-item-size">Thời khóa biểu</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item item-exercise">
+                  <a href="" class="nav-link d-flex align-items-center">
+                    <div class="item-exercise-icon me-3">
+                      <img src="assets/img/icon-attendance.png" alt=""
+                        class="w-36px h-36px rounded-circle obejct-fit-cover">
+                    </div>
+                    <div class="item-exercise-title lh-sm">
+                      <div class="item-exercise-text text-item-size">Điểm danh</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-inner h-100 px-3 d-flex flex-column justify-content-center">
+          <ul class="nav nav-log-help align-items-center ">
+            <li class="nav-item">
+              <a href="" class="nav-link nav-icon-logout p-0">
+                <i class="icon fa-solid fa-arrow-right-from-bracket"></i>
+              </a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a href="" class="nav-link nav-help p-0 d-flex align-items-center">
+                <div class="nav-help-text opacity-50 me-2">Hỗ trợ</div>
+                <div class="nav-help-icon small">
+                  <i class="icon fa-solid fa-life-ring"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+    <!-- Main -->
+    <div class="site-main d-flex flex-column align-items-center custom-scroll" data-overlayscrollbars-initialize>
+      <div class="page-content ">
+        <div class="page-content-inner">
+          <div class="post d-flex align-items-center justify-content-between px-3">
+            <div class="post-item d-flex align-items-center">
+              <div class="post-avatar me-2">
+                <img src="assets/img/icon-parent-grilt.png" alt=""
+                  class="w-36px h-36px rounded-circle obejct-fit-cover">
+              </div>
+              <div class="post-info">
+                <div class="post-info-text">Bạn muốn đăng gì</div>
+              </div>
+            </div>
+            <div class="post-icon">
+              <img src="assets/img/fake-photo.png" alt="" class="w-20px h-20px obejct-fit-cover">
+            </div>
+          </div>
+          <div class="news">
+            <div class="news-title d-flex justify-content-between align-items-center">
+              <h5 class="news-name">Bảng tin</h5>
+              <span class="news-show-all opacity-50">Xem tất cả</span>
+            </div>
+            <div class="news-item">
+              <div class="news-inner p-3">
+                <div class="news-header d-flex align-items-center">
+                  <div class="news-avatar me-2">
+                    <img src="assets/img/icon-parent-girlt.png" alt=""
+                      class="w-48px h-48px rounded-circle obejct-fit-cover">
+                  </div>
+                  <div class="news-title">
+                    <div class="news-author">Nguyễn Thu Thủy</div>
+                    <div class="small d-flex align-items-center opacity-50">
+                      <div class="icon-time me-2">
+                        <i class="fa-light fa-clock"></i>
+                      </div>
+                      <span class="operation-time">5 phút trước</span>
+                    </div>
+                  </div>
+
+                </div>
+                <hr class="hr">
+                <div class="news-body">
+                  <p class="news-text mb-0">
+                    Thứ 5 các ba mẹ chuẩn bị quần áo cho các con tham dự hội thao của nhà trường
+                    nhé.
+                    Các bạn có mặt lúc 7:30 nhé.
+                  </p>
+                </div>
+                <hr class="hr">
+                <div class="news-footer d-flex align-items-center justify-content-between">
+                  <div class="news-like d-flex align-items-center">
+                    <div class="like-icon me-2">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="like-count"><span>12</span> Thích</div>
+                  </div>
+                  <div class="news-comment d-flex align-items-center">
+                    <div class="comment-icon me-2">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="comment-count"><span>3</span> bình luận</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-item news-item-birthday">
+              <div class="news-inner p-3">
+                <div class="news-body d-flex align-items-center justify-content-around">
+                  <div class="news-birthday-person d-flex flex-column align-items-center">
+                    <div class="news-birthday-avatar mb-2">
+                      <img src="assets/img/icon-person-happybirthday.png" alt="" class="w-100">
+                    </div>
+                    <div class="news-birthday-name">Nguyễn Hà An</div>
+                    <div class="news-birthday-date">09/09/2019</div>
+                  </div>
+                  <div class="news-avatar-happybirthday">
+                    <img src="assets/img/happybirthday.png" alt="" class="w-100">
+                  </div>
+                </div>
+                <hr class="hr">
+                <div class="news-footer d-flex align-items-center justify-content-between">
+                  <div class="news-like d-flex align-items-center">
+                    <div class="like-icon me-2">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="like-count"><span>12</span> Thích</div>
+                  </div>
+                  <div class="news-comment d-flex align-items-center">
+                    <div class="comment-icon me-2">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="comment-count"><span>3</span> bình luận</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-item news-item-birthday">
+              <div class="news-inner p-3">
+                <div class="news-body d-flex align-items-center justify-content-around">
+                  <div class="news-birthday-person d-flex flex-column align-items-center">
+                    <div class="news-birthday-avatar mb-2">
+                      <img src="assets/img/icon-person-happybirthday.png" alt="" class="w-100">
+                    </div>
+                    <div class="news-birthday-name">Nguyễn Hà An</div>
+                    <div class="news-birthday-date">09/09/2019</div>
+                  </div>
+                  <div class="news-avatar-happybirthday">
+                    <img src="assets/img/happybirthday.png" alt="" class="w-100">
+                  </div>
+                </div>
+                <hr class="hr">
+                <div class="news-footer d-flex align-items-center justify-content-between">
+                  <div class="news-like d-flex align-items-center">
+                    <div class="like-icon me-2">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="like-count"><span>12</span> Thích</div>
+                  </div>
+                  <div class="news-comment d-flex align-items-center">
+                    <div class="comment-icon me-2">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="comment-count"><span>3</span> bình luận</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-item news-item-birthday">
+              <div class="news-inner p-3">
+                <div class="news-body d-flex align-items-center justify-content-around">
+                  <div class="news-birthday-person d-flex flex-column align-items-center">
+                    <div class="news-birthday-avatar mb-2">
+                      <img src="assets/img/icon-person-happybirthday.png" alt="" class="w-100">
+                    </div>
+                    <div class="news-birthday-name">Nguyễn Hà An</div>
+                    <div class="news-birthday-date">09/09/2019</div>
+                  </div>
+                  <div class="news-avatar-happybirthday">
+                    <img src="assets/img/happybirthday.png" alt="" class="w-100">
+                  </div>
+                </div>
+                <hr class="hr">
+                <div class="news-footer d-flex align-items-center justify-content-between">
+                  <div class="news-like d-flex align-items-center">
+                    <div class="like-icon me-2">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="like-count"><span>12</span> Thích</div>
+                  </div>
+                  <div class="news-comment d-flex align-items-center">
+                    <div class="comment-icon me-2">
+                      <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="comment-count"><span>3</span> bình luận</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="page-footer">
+        <div class="page-footer-inner h-100 px-3">
+          <ul class="nav nav-footer d-flex justify-content-center align-items-center h-100">
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link">
+                <div class="nav-icon d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="nav-text">Bảng tin</span>
+                </div>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="notification.html" class="nav-link ">
+                <div class="nav-icon d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="nav-text">Thông báo</span>
+                </div>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="utilities.html" class="nav-link">
+                <div class="nav-icon d-flex flex-column align-items-center">
+                  <i class="fa-sharp fa-solid fa-grid-2"></i>
+                  <span class="nav-text">Tiện ích</span>
+                </div>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link">
+                <div class="nav-icon d-flex flex-column align-items-center">
+                  <i class="fa-light fa-user"></i>
+                  <span class="nav-text">Tài khoản</span>
+                </div>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Main -->
+  </div>
+
+
+
+
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/overlayscrollbars/browser/overlayscrollbars.browser.es6.js"></script>
+  <script src="node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="node_modules/flatpickr/dist/l10n/vn.js"></script>
+  <script src="node_modules/nice-select2/dist/js/nice-select2.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // site-sidebar
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".nav-sidebar-menu .nav-link");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          document.querySelectorAll(".nav-sidebar-menu .nav-item").forEach(item => item.classList.remove("active"));
+
+          this.closest(".nav-item").classList.add("active");
+        });
+      });
+    });
+    // end site-sidebar
+
+    // page-footer
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   const footerLinks = document.querySelectorAll(".nav-footer .nav-link");
+
+    //   footerLinks.forEach(link => {
+    //     link.addEventListener("click", function (event) {
+    //       event.preventDefault();
+
+    //       document.querySelectorAll(".nav-footer .nav-item").forEach(item => item.classList.remove("active"));
+
+    //       this.closest(".nav-item").classList.add("active");
+    //     });
+    //   });
+    // });
+    // end page-footer
+    document.addEventListener("DOMContentLoaded", function () {
+    const navItems = document.querySelectorAll(".nav-footer .nav-item a");
+
+    let currentPath = window.location.pathname.split("/").pop();
+    let savedActivePath = localStorage.getItem("activeNav");
+
+    navItems.forEach(link => {
+        let parentLi = link.parentElement;
+        let linkPath = link.getAttribute("href").split("/").pop();
+
+        // Nếu có dữ liệu trong localStorage, dùng nó để active
+        if (savedActivePath && savedActivePath === linkPath) {
+            parentLi.classList.add("active");
+        }
+
+        // Khi click vào link, lưu đường dẫn vào localStorage
+        link.addEventListener("click", function () {
+            localStorage.setItem("activeNav", linkPath);
+        });
+    });
+});
+
+
+
+  </script>
+</body>
+
+</html>
