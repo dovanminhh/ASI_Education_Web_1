@@ -322,7 +322,7 @@ body {
     box-shadow: 0px 2px 8px rgba($dark, 0.01);
 
     .header-inner {
-        max-width: 580px;
+        max-width: 640px;
         width: 100%;
         margin: 0 auto;
 
@@ -530,19 +530,19 @@ body {
 .site-main {
     width: 100%;
     overflow-y: auto;
-    height: calc(100vh - 4.5rem);
+    height: calc(100vh - 4.5rem);   
 
     .page-content {
         display: flex;
         flex-direction: column;
-        max-width: 580px;
+        max-width: 640px;
         width: 100%;
+        padding-top: 2rem;
 
         .post {
             background-color: $white;
             width: 100%;
             height: 3.75rem;
-            margin-top: 2rem;
             border-radius: 0.75rem;
 
             .post-info {

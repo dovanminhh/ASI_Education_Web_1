@@ -12534,7 +12534,7 @@ body .site .site-header {
   box-shadow: 0px 2px 8px rgba(51, 51, 51, 0.01);
 }
 .site-header .header-inner {
-  max-width: 580px;
+  max-width: 640px;
   width: 100%;
   margin: 0 auto;
 }
@@ -12704,14 +12704,14 @@ body .site .site-header {
 .site-main .page-content {
   display: flex;
   flex-direction: column;
-  max-width: 580px;
+  max-width: 640px;
   width: 100%;
+  padding-top: 2rem;
 }
 .site-main .page-content .post {
   background-color: #fff;
   width: 100%;
   height: 3.75rem;
-  margin-top: 2rem;
   border-radius: 0.75rem;
 }
 .site-main .page-content .post .post-info .post-info-text {
